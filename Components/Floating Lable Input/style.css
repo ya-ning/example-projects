@@ -1,0 +1,84 @@
+body {
+    background-color: cadetblue;
+    margin: 0;
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    /* vh stands for Viewport Height*/
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+i {
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1.2em 0;
+}
+
+input,
+label {
+    transition: 0.4s ease;
+}
+
+label {
+    padding-left: 10px;
+    transform: translate(4px, -14px) scale(1.02);
+    margin-bottom: 2px;
+    cursor: text;
+    transform-origin: left top;
+    color: #757575;
+    position: absolute;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+    border-bottom: 2px solid #000000;
+}
+
+input:not(:placeholder-shown) ~ label,
+input:focus ~ label {
+    transform: translate(10px, -35px) scale(0.8);
+    padding-left: 0px;
+    color: black;
+}
+
+input {
+    font-size: 1.2em;
+    padding: 30px 10px 10px 10px;
+    border: none;
+    border-bottom: 2px solid #e9e9e9;
+    outline: none;
+    /*background-color: #f2f2f2; */
+    border-radius: 5px 5px 0px 0px;
+}
+
+input::placeholder {
+    opacity: 0;
+}
+
+a {
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: darkcyan;
+    color: floralwhite;
+    border-radius: 4px;
+}
+
+a:hover {
+    background: rgb(2, 117, 117);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15)
+}

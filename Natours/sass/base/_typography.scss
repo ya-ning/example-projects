@@ -4,7 +4,7 @@ body {
     /* font-size: 16px; */
     line-height: 1.7;
     color: $color-grey-dark;
-    padding: 3rem; /*30px*/
+    padding: 3rem;
 }
 
 .heading-primary {
@@ -21,6 +21,11 @@ body {
         letter-spacing: 3.5rem;
     
         animation: moveInLeft 1s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
     }
     
     &--sub {
@@ -30,6 +35,10 @@ body {
         letter-spacing: 1.75rem;
     
         animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
     }
 }
 
@@ -38,12 +47,22 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-image: linear-gradient(to right,
+        $color-primary-light,
+        $color-primary-dark);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    letter-spacing: 2px;
-    transition: all;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -55,7 +74,6 @@ body {
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .paragraph {

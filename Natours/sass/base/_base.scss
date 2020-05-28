@@ -1,16 +1,52 @@
 *,
 *::after,
 *::before {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
 
 html {
     //this defines what 1rem is
-    font-size: 62.5%; /* 10 / 16 (what we want / the default)*/
+    //1rem = 10px
+    font-size: 62.5%;
+    /* 10 / 16  = (what we want / the default)*/
+
+    @include respond(tab-land) {
+        //width < 1200 ?
+        font-size: 56.25%;
+        //1rem = 9px, 9/16 = 56.25%
+    }
+
+    @include respond(tab-port) {
+        //width < 900 ?
+        font-size: 60%;
+        //1rem = 8px, 8/16 = 50% 
+    }
+
+    /* SAME AS ABOVE, WE DON'T NEED TO DEFINE AGAIN
+    @include respond(phone) {
+        font-size: 50%;
+    }
+    */
+
+    @include respond(big-desktop) {
+        //width > 1800 ?
+        font-size: 75%;
+        //1rem = 12 px, 12/16 = 75%
+    }
 }
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
 }

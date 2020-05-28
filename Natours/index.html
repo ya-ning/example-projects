@@ -6,7 +6,9 @@
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
+        <!--
         <link rel="stylesheet" href="css/icon-font.css">
+        -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
@@ -73,9 +75,31 @@
                     <div class="col-1-of-2">
                         <!-- Emmet: .composotion>(img.composition__photo.composition__photo--1)*3 -->
                         <div class="composition">
+
+                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 1"
+                                class="composition__photo composition__photo--p1"
+                                src="img/nat-1-large.jpg">
+
+                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 2"
+                                class="composition__photo composition__photo--p2"
+                                src="img/nat-2-large.jpg">
+                            
+                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 3"
+                                class="composition__photo composition__photo--p3"
+                                src="img/nat-3-large.jpg">
+
+                            <!--
                             <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                             <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
                             <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            -->
+
                         </div>
                     </div>
                 </div>
@@ -346,7 +370,13 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                            media="(max-width: 37.5em)">
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+                </picture>
+
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -354,7 +384,7 @@
                         <ul class="footer__list">
                             <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
                             <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
                             <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
                             <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
                         </ul>
@@ -381,7 +411,7 @@
                     <p class="popup__text">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur enim doloremque dicta assumenda fuga eligendi, non ratione sint. Neque a, quibusdam, vitae corrupti ipsam pariatur rem voluptate quod fugit nostrum nesciunt! Maiores, velit mollitia, dolorem adipisci, nisi assumenda a autem repellendus sit esse ad fuga. Dolorum, quaerat voluptatibus architecto repellendus quasi labore aspernatur natus ad reiciendis atque impedit corrupti veritatis voluptates cupiditate dolorem fugit ea fuga minima quae, in unde perspiciatis illum ducimus. Quaerat et ipsum debitis ad deserunt repellendus amet iure velit quod saepe quidem enim voluptatum sequi eligendi, molestiae officia necessitatibus, tempora nostrum quis iusto dolore aliquid!
                     </p>
-                    <a href="#" class="btn btn--green">Book now &rarr;</a>
+                    <a href="index.html" class="btn btn--green">Book now &rarr;</a>
                 </div>
             </div>
         </div>

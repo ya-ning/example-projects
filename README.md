@@ -8,7 +8,10 @@ Budgety, a tool helps people to manage the income and expexce.
   Presenting advanced JavaScript.
 
 Natour, a website for an imaginary outdoor company.
-  Presenting advanced CSS, writing by SASS, includes animation, flexbox and grid layouts. The RWD part is building at the moment.
+  Presenting advanced CSS, writing by SASS, includes animation, flexbox and grid layouts.
+
+Trillo, an app for an all-in-one booking app.
+  Presenting advanced CSS, writing by SASS, includes animation, flexbox and grid layouts.
 
 Components, fancy web components includes log in form, image hover effect and loading animation.
   Presenting advanced CSS.

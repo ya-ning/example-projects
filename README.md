@@ -1,17 +1,20 @@
 # example-projects
 A repository to display the projects I have worked on or been working on, which includes:
 
-Pig-game, a game which accepts custom target scores.
+::Pig-game, a game which accepts custom target scores.
   Presenting advanced JavaScript.
 
-Budgety, a tool helps people to manage the income and expexce.
+::Budgety, a tool helps people to manage the incomes and expenses.
   Presenting advanced JavaScript.
 
-Natour, a website for an imaginary outdoor company.
-  Presenting advanced CSS, writing by SASS, includes animation, flexbox and grid layouts.
+::Natour, a website for a fictional outdoor company.
+  Mainly presenting advanced CSS with ANIMATION, compiled by SASS.
 
-Trillo, an app for an all-in-one booking app.
-  Presenting advanced CSS, writing by SASS, includes animation, flexbox and grid layouts.
+::Trillo, an app for a fictional all-in-one booking app.
+  Mainly presenting advanced CSS with FLEXBOX, compiled by SASS.
 
-Components, fancy web components includes log in form, image hover effect and loading animation.
+::Nexter, an app for a fictional company which sells luxury real estates across the world.
+  Mainly presenting advanced CSS with GRID LAYOUTS, compiled by SASS.
+
+::Components, fancy web components includes log in form, image hover effect and loading animation.
   Presenting advanced CSS.

@@ -1,0 +1,159 @@
+:root {
+    --color-primary-light: #81ebeb;
+    --color-primary-dark: #177579;
+    --color-secondary: #4365c2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(120deg, var(--color-primary-light), var(--color-primary-dark));
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+
+form button {
+    color: var(--color-primary-dark);
+    background-color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+form button:hover {
+    background-color: var(--color-primary-dark);
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: .5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.checked-btn,
+.delete-btn {
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.checked-btn {
+    background-color: rgb(73, 204, 73);
+}
+
+.checked-btn:hover,
+.delete-btn:hover {
+    background-color: white;
+    color: var(--color-secondary);
+    transition: all .3s;
+}
+
+.checked-btn:hover {
+    background-color: white;
+    color: rgb(73, 204, 73);
+}
+
+.todo-item {
+    padding: 0 .5rem;
+}
+
+.fa-check, 
+.fa-trash {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.filter-items {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    color: var(--color-secondary);
+    width: 12rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background-color: var(--color-secondary);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all .3s ease;
+}
+
+.select:hover::after {
+    background-color: white;
+    color: var(--color-secondary);
+}

@@ -19,5 +19,8 @@ A repository to display the projects I have worked on or been working on, which 
 ### Nexter, an app for a fictional company which sells luxury real estates across the world.
   * Mainly presenting advanced CSS with GRID LAYOUTS, compiled by SASS.
 
-### Components, fancy web components includes log in form, image hover effect and loading animation.
+### Tippy, a small app to calculate tip and split bills easier.
+  * Presenting HTML, CSS and JavaScript.
+
+### Components, fancy web components includes log in form, image hover effect, loading animation and Fill up button.
   * Presenting advanced CSS.

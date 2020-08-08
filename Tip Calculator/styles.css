@@ -1,0 +1,93 @@
+html {
+    font-size: 62.5%;
+    color: #696969;
+    background-color: #FFFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    max-width: 30vw;
+    margin: 1.5rem auto;
+    background: linear-gradient(45deg, #48D1CC, #66CDAA);
+    padding: 1rem 1rem 3rem 1.2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1rem #808080;
+    font-weight: 300;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    padding-bottom: 2rem;
+    font-weight: 500;
+}
+
+section {
+    background-color: #F0FFFF;
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+    padding: 0 1.6rem;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 2px #808080;
+}
+
+section > div {
+    padding: 1.4rem 0;
+}
+
+.bill {
+    display: flex;
+
+}
+
+.bill label {
+    flex: 1;
+    align-self: center;
+}
+
+.bill input {
+    flex: 3;
+}
+
+input[type="number"] {
+    /* background-color: ; */
+    font-size: 1.6rem;
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+    padding: 0.8rem 0 0.8rem 0.8rem;
+    box-shadow: inset 0 2px 2px #808080;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.slider {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: #DCDCDC;
+    margin-top: 1.2rem;
+    border-radius: 0.3rem;
+    outline-color: #48D1CC;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #66CDAA;
+    cursor: pointer;
+    border: none;
+}
